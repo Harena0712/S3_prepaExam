@@ -1,0 +1,83 @@
+- Liste par jour des vehicules et son chauffeur correspondant
+    - Base :
+        - Creer les tables et insertion des données:
+            . chauffeur: id, nom
+            . vehicule : id, nom
+            . trajet : id, dateheure debut, dateheure fin, montant de recette, montant carburant, km, arrivee, depart
+            . mouvement : id, id chauffeur, id vehicule, id trajet, date
+
+    - Design :
+        . Afficher dans un tableau
+            - chauffeur, véhicule, date
+
+    - Fonction :
+        . MouvementClass : getAll()
+        . ChauffeurClass : getById(IdChauffeur)
+        . VehiculeClass : getById(IdVehicule)
+
+    - Integration :
+        . lister les vehicules et chauffeur par date
+            . appeler la fonction getAll() ( de mouvement)
+            . boucle des mouvements
+            . appeler la fonction getById(IdChauffeur) (chauffeur)
+            . appeler la fonction getById(IdVehicule) (vehicule)
+
+- Total montant bénéfice par véhicule
+    - Base :
+        . vehicule
+
+    - Design :
+        . Afficher dans un tableau
+
+    - Fonction :
+        . VehiculeClass : getTotalBenefice(IdVehicule)
+
+    - Integration :
+        . lister les vehicules avec les montants
+            . appeler la fonction getTotalBenefice(IdVehicule) + boucle
+
+- Total montant bénéfice par jour
+    - Base :
+        . mouvement
+        . trajet
+
+    - Design :
+        . Afficher dans un tableau
+
+    - Fonction :
+        . MouvementClass: getTotalBenefice(Date)
+
+    - Integration
+        . lister les benefices par jour
+            . appeler la fonction getTotalBenefice(Date) + boucle
+
+- Afficher les trajets les plus rentables par jour
+    - Base :
+        . trajet
+
+    - Design :
+        . Afficher dans un tableau
+
+    - Fonction :
+        . TrajetClass: getRentableTrajet(Date)
+
+    - Integration :
+        . lister les trajet rentables:
+            . appeler la fonction getRentableTrajet(Date) + boucle
+
+
+- Afficher les véhicules disponibles dans une date donnée
+    - Base :
+        . vehicule
+
+    - Design :
+        . 
+
+
+
+
+<!-- 172.16.3.14, 17, 44, 8 -->
+
+<!-- - Atao anaty baseurl ao @ config ny chemin: /ETU/003947/projet
+    - Copie-na eo ivelany, meme niveau amin'ny app ny contenu an ny public
+ -->
