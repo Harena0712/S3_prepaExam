@@ -16,6 +16,17 @@ class ApiExampleController {
 		$this->app = $app;
 	}
 	
+	public function getTotalBenefVehicule($idVehicule) {
+		$MouvementModel = new MouvementModel(Flight::db());
+		$mouvement = $MouvementModel->getByIdVehicule($idVehicule);
+		$idTrajet = $mouvement['idTrajet'];
+		$TrajetModel = new TrajetModel(Flight::db());
+		$trajet = $TrajetModel->getById($idTrajet);
+		$benefice = $trajet['montantRecette'] - $trajet['montantCarburant'];
+
+		return $benefice;
+	}
+
 	public function getListeVehiculeChauffeur() {
 		$MouvementModel = new MouvementModel(Flight::db());
 		$mouvements = $MouvementModel->getAll();

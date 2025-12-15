@@ -29,8 +29,10 @@
     - Design :
         . Afficher dans un tableau
 
-    - Fonction :
-        . VehiculeClass : getTotalBenefice(IdVehicule)
+    - Fonction : (en cours)
+        . MouvementClass :  getByIdVehicule(IdVehicule)
+        . TrajetClass : getTotalBenefice(IdTrajet)
+        . Creer un vue TrajetVehicule pour faciliter la requete
 
     - Integration :
         . lister les vehicules avec les montants
