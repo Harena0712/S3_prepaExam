@@ -10,7 +10,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo">E-Varotra</a>
+                <a href="index.html" class="logo">Taxi be</a>
                 <ul class="menu">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="/produit/form_ajout">ajouter</a></li>
